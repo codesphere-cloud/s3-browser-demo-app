@@ -1,0 +1,15 @@
+schemaVersion: v0.2
+prepare:
+  steps: []
+test:
+  steps: []
+run:
+  service-1:
+    steps:
+      - command: npm run dev
+    plan: 101
+    replicas: 1
+    isPublic: true
+    network:
+      path: /
+      stripPath: false

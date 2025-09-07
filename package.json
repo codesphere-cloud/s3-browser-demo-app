@@ -1,0 +1,31 @@
+{
+  "name": "s3-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "copy-assets": "copyfiles -u 1 \"src/views/**/*\" \"src/public/**/*\" dist",
+    "dev": "npm run build && npm run copy-assets && node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "minio": "^8.0.5",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^5.0.3",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.3.1",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.9.2"
+  }
+}
